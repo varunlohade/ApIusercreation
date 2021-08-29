@@ -22,7 +22,7 @@ mail=Mail(app)
 otp=randint(1000,9999)
 
 app.config['SECRET_KEY']='thisissecret'
-app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///scholarship.db'
+app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///study.db'
 db= SQLAlchemy(app)
 
 class User(db.Model):
